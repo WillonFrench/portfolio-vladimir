@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Handel';
+    src: url('handel.ttf') format('truetype');
+}
+
+@media screen and (max-width: 1024px) {
+    .header__inner {
+        display: none;
+    }
+}
+  
+@media screen and (min-width: 375px) and (max-width: 492px) {
+    .header__text {
+        text-align: center;
+    }
+
+    .header__image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .header__inner {
+        justify-content: center;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    background-color: black;
+    width: 100%;
+}
+
+.line__block {
+    margin: 0 auto;
+    max-width: 1485px;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    color: #FFBF40;
+    padding-bottom: 15px;
+}
+
+.line__block img {
+    margin-right: 35px;
+}
+
+.header {
+    color: white;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Handel', sans-serif;
+    font-size: 76px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Handel', sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.header__image img{
+    width: 578px;
+    height: 758px;
+}
+
+.header__image p {
+    font-size: 20px;
+    color: #FFBF40;
+    margin-bottom: 30px;
+}
+
+.header__text {
+    padding-left: 45px;
+    flex: 0 0 auto;
+    width: calc(50% - 10px);
+    white-space: normal;
+}
+
+.header__text h1 {
+    margin-bottom: 15px;
+}
+
+.header__text p {
+    margin-bottom: 35px;
+    font-size: 28px;
+    color: #FFBF40;
+    text-transform: uppercase;
+}
+
+.header__text span {
+    font-size: 20px;
+    word-wrap:break-word;
+    text-transform: uppercase;
+}
+
+.slider__container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide {
+    margin: 10px 0 10px 0;
+}
+
+.slide:last-child {
+    margin-right: 0px;
+}
+
+.slide img {
+    width: 175px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.prev img {
+    width: 60px;
+    height: 60px;
+}
+
+.next img {
+    width: 60px;
+    height: 60px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 70px;
+    word-wrap:break-word;
+    margin: 0 auto;
+}
+
+.main__content h1 {
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+.block__text {
+    font-size: 20px;
+    padding-bottom: 60px;
+    line-height: 27px;
+    word-wrap:break-word;
+}
+
+.block__three h1 {
+    color: #FFBF40;
+}
+
+.footer {
+    padding: 100px 0 50px 0;
+}
+
+.block__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block__icons img {
+    margin-right: 35px;
+    cursor: pointer;
+
+}
+
+.block__icons img:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+.block__icons img:last-child {
+    margin-right: 0;
+}
+
+.slitainer__second {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider__second {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide__second {
+    width: 100%;
+    height: 100%;
+}
+
+.slide__second img {
+    object-fit: cover;
+}
+
+.prev__second, .next__second {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.switch__buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev__second:hover, .next__second:hover {
+    filter:brightness(70%);
+    transition: 0.7s;
+}
